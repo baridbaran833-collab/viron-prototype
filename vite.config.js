@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// For a GitHub project page, set base to '/your-repository-name/' before building.
 export default defineConfig({
+  // GitHub Pages serves this repository at /viron-prototype/, not at the domain root.
+  base: '/viron-prototype/',
   plugins: [react()],
 });
